@@ -125,6 +125,7 @@ a {
 .article {
     margin-bottom: 3rem;
 }
+
 .article:last-child {
     margin-bottom: 0;
 }
@@ -163,7 +164,7 @@ a {
 }
 
 .card_price {
-font-weight: bold;
+    font-weight: bold;
 }
 
 .card_price::before {
@@ -182,13 +183,25 @@ font-weight: bold;
     gap: 1rem;
     padding: 3rem var(--my_padding);
     justify-content: space-between;
+}
+
+.footer_left {
+    display: flex;
+    gap: 2rem;
+    width: 50%;
+    justify-content: space-between;
     align-items: flex-start;
+}
+
+.footer_right {
+    width: 40%;
 }
 
 .footer_items li {
     list-style: none;
     line-height: 2.7;
     font-size: .8rem;
+    min-width: 140px;
 }
 
 .footer_items li a {
@@ -196,7 +209,7 @@ font-weight: bold;
 }
 
 .footer_form-contact {
-    width: 45%;
+    width: 40%;
 }
 
 .footer_form-contact p {
@@ -238,4 +251,114 @@ font-weight: bold;
     color: var(--my_white);
     text-align: center;
     border-top: 1px solid #e4e4e4;
+}
+
+/* MEDIA QUERY 768PX */
+@media (max-width:768px) {
+    .topbar {
+        gap: 1rem;
+    }
+
+    .topbar_logo-search img {
+        height: 40px;
+    }
+
+    .topbar_search-container {
+        width: 260px;
+    }
+
+    .topbar_search-container input {
+        width: 250px;
+    }
+
+    .banner {
+        background-position: calc(100% - 30%);
+    }
+
+    .banner_title {
+        font-size: 2.5rem;
+        text-shadow: 0 2px 2px var(--my_dark-grey);
+    }
+
+    .banner_subtitle {
+        font-size: 1.3rem;
+        text-shadow: 0 2px 2px var(--my_dark-grey);
+    }
+
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    .footer_left {
+        flex-direction: column;
+    }
+
+    .footer_items li {
+        line-height: 1.8;
+    }
+
+    .footer_right {
+        position: relative;
+        top: 1rem;
+    }
+
+    .footer_form-contact {
+        width: 60%;
+    }
+}
+
+/* MEDIA QUERY 600PX */
+@media (max-width:600px) {
+    :root {
+        --my_padding: 5%;
+    }
+
+    .topbar_search-container {
+        width: 50px;
+    }
+
+    .topbar_search-container input {
+        display: none;
+    }
+
+    .footer_form-contact {
+        width: 40%;
+    }
+}
+
+/* MEDIA QUERY 360PX */
+@media (max-width:360px) {
+
+
+    .topbar {
+        /* display: grid; */
+        /* grid-template-columns: 20px 20px; */
+        gap: .2rem
+    }
+
+    .banner {
+        background-position: calc(100% - 20%);
+    }
+
+    .banner_title {
+        font-size: 2rem;
+    }
+
+    .banner_subtitle {
+        font-size: .9rem;
+    }
+
+    .footer_left {
+        align-items: center;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_form-contact {
+        width: 90%;
+    }
 }
