@@ -1,0 +1,241 @@
+:root {
+    --my_white: #fff;
+    --my_grey: #f5f5f5;
+    --my_dark-grey: #464646;
+    --my_blue: #2A7AE4;
+    --my_lightblue: #EAF2FD;
+
+    --my_padding: 10%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--my_dark-grey);
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* TOPBAR */
+.topbar {
+    height: 80px;
+    padding: .8rem var(--my_padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--my_white);
+}
+
+.topbar_logo-search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.topbar_search-container {
+    width: 300px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 30px;
+    background: var(--my_grey);
+}
+
+.topbar_search-container input {
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.topbar_search-container:hover {
+    box-shadow: 0 1px 6px #20212447;
+    border-color: #dfe1e500;
+}
+
+.search-button {
+    background: url("./assets/lupa.jpg") no-repeat center / contain;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.topbar_login {
+    min-width: 90px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    font-size: .8rem;
+    color: var(--my_blue);
+    border: 1px solid;
+}
+
+/* BANNER */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url(./assets/banner_11.jpg) no-repeat top / cover;
+    color: var(--my_white);
+    padding: 0 var(--my_padding);
+}
+
+.banner_container {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.banner_title {
+    font-size: 3rem;
+}
+
+.banner_subtitle {
+    font-size: 1.5rem;
+}
+
+.banner_button {
+    width: 120px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    font-size: .8rem;
+    color: var(--my_white);
+    background: var(--my_blue);
+}
+
+/* PRODUCTOS */
+.products {
+    width: 100%;
+    padding: 3rem var(--my_padding);
+    background-color: var(--my_grey);
+}
+
+.article {
+    margin-bottom: 3rem;
+}
+.article:last-child {
+    margin-bottom: 0;
+}
+
+.article_top-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.article__title {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.article__see-more {
+    font-size: 1rem;
+}
+
+.cards_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    width: 150px;
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card_price {
+font-weight: bold;
+}
+
+.card_price::before {
+    content: "$ ";
+}
+
+.card_see-product {
+    color: var(--my_blue);
+    font-weight: bold;
+}
+
+/* FOOTER-CONTACT */
+.footer-contact {
+    background-color: var(--my_lightblue);
+    display: flex;
+    gap: 1rem;
+    padding: 3rem var(--my_padding);
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer_items li {
+    list-style: none;
+    line-height: 2.7;
+    font-size: .8rem;
+}
+
+.footer_items li a {
+    color: var(--my_dark-grey);
+}
+
+.footer_form-contact {
+    width: 45%;
+}
+
+.footer_form-contact p {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.footer_form-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer_form-contact_input {
+    font-size: .8rem;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    resize: none;
+}
+
+.footer_form-contact_button {
+    width: 120px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    font-size: .8rem;
+    color: var(--my_white);
+    background: var(--my_blue);
+    border: none;
+}
+
+/* INICIO FOOTER */
+
+.footer_designer {
+    width: 100%;
+    padding: .5rem var(--my_padding);
+    font-size: .8rem;
+    background-color: var(--my_blue);
+    color: var(--my_white);
+    text-align: center;
+    border-top: 1px solid #e4e4e4;
+}
