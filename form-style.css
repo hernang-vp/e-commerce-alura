@@ -40,7 +40,10 @@ margin-bottom: 1rem;
     outline: none;
     width: 340px;
     height: 50px;
+    display: grid;
+    place-content: center;
     font-family: 'Raleway', sans-serif;
+    font-size: .8rem;
     color: var(--my_white);
     background-color: var(--my_blue);
 }
