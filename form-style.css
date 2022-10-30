@@ -1,0 +1,62 @@
+.topbar_login {
+    display: none;
+}
+
+.main {
+    background-color: var(--my_grey);
+    display: grid;
+    place-content: center;
+}
+
+.main_container {
+    text-align: center;
+    padding: 4rem;
+}
+
+.main_title {
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.field_input {
+    border: none;
+    outline: none;
+    width: 340px;
+    height: 50px;
+    padding: .5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: .8rem;
+    box-shadow: 0 1.5px 2px -1.5px var(--my_dark-grey);
+}
+
+.field_button {
+    border: none;
+    outline: none;
+    width: 340px;
+    height: 50px;
+    font-family: 'Raleway', sans-serif;
+    color: var(--my_white);
+    background-color: var(--my_blue);
+}
+
+.description {
+    font-family: 'Raleway', sans-serif;
+    height: 100px;
+    resize: none;
+}
+
+@media (max-width:360px) {
+    .log_input {
+        width: 270px;
+    }
+    
+    .log_button {
+        width: 270px;
+    }
+}

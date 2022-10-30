@@ -226,8 +226,16 @@ a {
 .footer_form-contact_input {
     font-size: .8rem;
     font-family: 'Raleway', sans-serif;
+    height: 40px;
+    padding: .5rem;
     outline: none;
+    border: none;
+    box-shadow: 0 1.5px 2px -1.5px var(--my_dark-grey);
+}
+
+.text-area {
     resize: none;
+    height: 100px;
 }
 
 .footer_form-contact_button {
@@ -245,6 +253,7 @@ a {
 
 .footer_designer {
     width: 100%;
+    height: 30px;
     padding: .5rem var(--my_padding);
     font-size: .8rem;
     background-color: var(--my_blue);
